@@ -41,7 +41,7 @@ io.emit ("getOnlineUsers", Object.keys(userSocketMap))
 // Middleware
 app.use(express.json({ limit: "4mb" }));
 app.use(cors({
-        origin: "https://chartglacier.netlify.app/",
+        origin: "https://chartglacier.netlify.app",
         methods: ["GET", "POST", "DELETE", "PUT"],
         
     }));
